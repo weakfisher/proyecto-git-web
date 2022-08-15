@@ -8,15 +8,18 @@
 a {
   text-decoration: none;
   color: #000;
+  box-shadow: none;
 }
 body {
   height: 100%;
 }
 .encabezado__lista :hover {
   background-color: #5b78a7;
-  display: block;
-  transition-duration: 900ms;
-  transition-timing-function: ease-in-out;
+  transition: all;
+  transition-duration: 1s;
+  color: white;
+  transition-timing-function: linear;
+  border-radius: 5%;
 }
 .menu {
   display: none;
@@ -71,12 +74,11 @@ textarea {
 .encabezado__logo {
   max-width: 50px;
   max-height: auto;
-
-  /* margin-top: 1rem;
-    margin-left: 1rem;    */
+  padding: 5%;
 }
 .encabezado__lista {
   display: flex;
+  margin-bottom: 0;
 }
 
 .encabezado__sublista {
@@ -91,9 +93,6 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-.hero__text:hover {
-  color: aliceblue;
-}
 .hero__text {
   text-align: center;
   background-color: rgba(224, 241, 64, 0.747);
@@ -101,6 +100,17 @@ textarea {
   border-radius: 15%;
 
   padding: 15px;
+
+  transition: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+}
+.hero__text:hover {
+  color: #000;
+  background-color: rgb(255, 255, 255);
+  transform: scale(2, 2);
+  opacity: 60%;
+  border-radius: 15% 0 15% 0;
 }
 
 /* INDEX - TARJETAS   */
@@ -131,6 +141,13 @@ textarea {
   width: 100px;
   height: 50px;
   padding: 10px;
+  font-size: small;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid transparent;
 }
 
 h2 {
@@ -139,13 +156,15 @@ h2 {
 
 /* ICONO SEGUIDOR */
 .icono__seguidor {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   z-index: 4;
   position: fixed;
 
-  left: 93%;
+  left: 95vw;
   top: 93%;
+
+  cursor: pointer;
 }
 
 /* FOOTER */
@@ -155,6 +174,7 @@ h2 {
   height: auto;
   overflow: auto;
   padding: 10px;
+  font-size: small;
 }
 
 .pie__contacto {
@@ -162,7 +182,7 @@ h2 {
   text-align: justify;
 }
 .pie__copy {
-  font-size: 1rem;
+  font-size: small;
 }
 
 /* FORMULARIO */
@@ -187,6 +207,15 @@ h2 {
 
 /* BREAKPOINTS */
 @media (max-width: 480px) {
+  .icono__seguidor {
+    left: 85%;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: small;
+  }
   .contenedor-principal {
     display: grid;
 
@@ -239,6 +268,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: small;
   }
 
   .secundaria {
@@ -269,15 +299,29 @@ h2 {
     flex-direction: column;
     width: 400px;
   }
-  .tarjeta__descripcion .tarjeta__boton:hover {
-    background-color: #5b78a7;
+  .tarjeta__descripcion {
     align-self: center;
     border-radius: 15%;
-    transition-timing-function: linear;
-    transition-duration: 1s;
   }
   .tarjeta__contenedor {
     display: flex;
+  }
+  .tarjeta__boton {
+    transition-duration: 1s;
+    border-radius: 15%;
+    cursor: pointer;
+    transition-timing-function: ease-in;
+
+    font-size: 1rem;
+  }
+  .tarjeta__boton:hover {
+    background-color: #5b78a76c;
+    border-style: dashed;
+    border-radius: 15%;
+
+    border: 1px solid rgba(0, 0, 0, 0.082);
+
+    transform: scale(1.5, 1.5) translateY(1rem);
   }
 
   .tarjeta {
