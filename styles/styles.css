@@ -31,37 +31,13 @@ textarea {
   width: 100%;
   overflow: hidden;
 }
-/* GRIDS AREAS */
-.contenedor-principal {
-  display: grid;
-  height: 100vh;
-  margin: 5px;
-
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10% 2fr auto;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-}
-.contenedor-header {
-  grid-area: header;
-  width: 100%;
-
-  overflow: hidden;
-}
-.contenedor-main {
-  grid-area: main;
-  width: 100%;
-}
-.contenedor-footer {
-  grid-area: footer;
-}
-
 /* INDEX - NAVEGACION   */
 
 .encabezado {
   background-color: blanchedalmond;
   text-emphasis-color: white;
 
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -71,15 +47,19 @@ textarea {
 .encabezado__item {
   padding: 10px;
 }
+.burguer-menu {
+  display: none;
+}
 .encabezado__logo {
-  max-width: 50px;
+  max-width: 20%;
   max-height: auto;
   padding: 5%;
+  z-index: 99;
 }
-.encabezado__lista {
+/* .encabezado__lista {
   display: flex;
   margin-bottom: 0;
-}
+} */
 
 .encabezado__sublista {
   display: none;
@@ -88,7 +68,7 @@ textarea {
 .hero {
   height: 92vh;
   background: url(../images/hero.jpg) center / cover no-repeat fixed;
-  display: flex;
+  /* display: flex; */
 
   justify-content: center;
   align-items: center;
@@ -219,16 +199,9 @@ h2 {
     font-size: small;
   }
   .contenedor-principal {
-    display: grid;
-
     margin: 5px;
-
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10% 2fr auto;
-    grid-template-areas: "header header header" "main main main" "footer footer footer";
   }
   .contenedor-header {
-    grid-area: header;
     width: 100%;
 
     overflow: hidden;
@@ -242,11 +215,7 @@ h2 {
     display: block;
   }
   .contenedor-main {
-    grid-area: main;
     width: 100%;
-  }
-  .contenedor-footer {
-    grid-area: footer;
   }
   main {
     display: flex;
@@ -297,25 +266,21 @@ h2 {
 }
 @media (min-width: 481px) {
   .contenedor-principal {
-    grid-template-rows: 10% 2fr auto;
     margin-top: 0;
     margin-bottom: 0;
   }
   .tarjeta {
     flex-direction: row;
   }
-  .tarjeta__descripcion {
+  /* .tarjeta__descripcion {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 400px;
-  }
+  } */
   .tarjeta__descripcion {
     align-self: center;
     border-radius: 15%;
-  }
-  .tarjeta__contenedor {
-    display: flex;
   }
   .tarjeta__boton {
     transition-duration: 1s;

@@ -26,18 +26,19 @@
   </head>
   <body>
     <!--  fila logo y nav -->
-    <div class="contenedor-principal">
-      <div class="contenedor-header">
-        <header class="encabezado">
-          <a href="./index.html"
-            ><img
-              src="./images/termo.png"
-              class="encabezado__logo"
-              alt="Imagen de un termo"
-          /></a>
-
-          <div class="menu"><i class="bi bi-list"></i></div>
-          <nav class="encabezado__nav">
+    <div class="container-fluid">
+      <div class="row">
+        <header class="row">
+          <div class="col-3">
+            <a href="./index.html"
+              ><img
+                src="./images/termo.png"
+                class="encabezado__logo"
+                alt="Imagen de un termo"
+            /></a>
+          </div>
+          <div class="burguer-menu"><i class="bi bi-list"></i></div>
+          <nav class="col-4">
             <ul class="encabezado__lista">
               <li class="encabezado__item">
                 <a href="./pages/productos.html">Productos</a>
@@ -62,7 +63,7 @@
       </div>
       <!-- cierre fila logo y nav-->
       <!--comienzo seccion de novedades   -->
-      <div class="contenedor-main">
+      <div class="row contenedor-main">
         <main>
           <!-- comienzo icono de contacto rapido -->
           <img
@@ -108,7 +109,7 @@
 
       <!-- fin seccion novedades-->
       <!-- Comienzo de footer  -->
-      <div class="contenedor-footer">
+      <div class="row contenedor-footer">
         <footer class="pie">
           <h3 class="pie__copy">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
