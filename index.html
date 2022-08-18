@@ -26,105 +26,156 @@
   </head>
   <body>
     <!--  fila logo y nav -->
-    <div class="container-fluid">
-      <div class="row">
-        <header class="row">
-          <div class="col-3">
-            <a href="./index.html"
-              ><img
-                src="./images/termo.png"
-                class="encabezado__logo"
-                alt="Imagen de un termo"
-            /></a>
-          </div>
-          <div class="burguer-menu"><i class="bi bi-list"></i></div>
-          <nav class="col-4">
-            <ul class="encabezado__lista">
-              <li class="encabezado__item">
-                <a href="./pages/productos.html">Productos</a>
-              </li>
-              <ul class="encabezado__sublista">
-                <li class="encabezado__item"><a href=""> Termos</a></li>
-                <li class="encabezado__item"><a href=""> Mates</a></li>
-              </ul>
 
-              <li class="encabezado__item">
-                <a href="./pages/nosotros.html"> Nosotros</a>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light" data-aos="zoom-out-left">
+        <div class="container-fluid">
+          <img
+            class="navbar-brand px-3 encabezado__logo"
+            src="./images/termo.png"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./pages/guia.html"
+                  >Guia</a
+                >
               </li>
-              <li class="encabezado__item">
-                <a href="./pages/contacto.html"> Contacto</a>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/productos.html">Productos</a>
               </li>
-              <li class="encabezado__item">
-                <a href="./pages/guia.html">Guia</a>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
               </li>
             </ul>
-          </nav>
-        </header>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- cierre fila logo y nav-->
+    <!--comienzo seccion de novedades   -->
+
+    <main>
+      <!-- comienzo icono de contacto rapido -->
+      <img
+        src="./images/733641.png"
+        class="icono__seguidor"
+        alt="Whatsapp Icon"
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-center"
+      />
+      <!--fin contacto rapido  -->
+
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide d-none d-md-block"
+        data-bs-ride="carousel"
+        data-aos="zoom-out"
+      >
+        <div class="carousel-inner hero">
+          <div class="carousel-item active">
+            <img
+              src="./images/hero.jpg"
+              class="d-block tarjeta__img"
+              alt="Portada Mate"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="./images/city.jpg"
+              class="d-block tarjeta__img"
+              alt="Portada Mate 2"
+            />
+          </div>
+        </div>
       </div>
-      <!-- cierre fila logo y nav-->
-      <!--comienzo seccion de novedades   -->
-      <div class="row contenedor-main">
-        <main>
-          <!-- comienzo icono de contacto rapido -->
-          <img
-            src="./images/733641.png"
-            class="icono__seguidor"
-            alt="Whatsapp Icon"
-          />
-          <!--fin contacto rapido  -->
-          <section class="hero">
-            <div class="hero__text">
-              <h2>Bienvenidos a Tienda Mate</h2>
+      <div class="container-fluid px-3" data-aos="fade-right">
+        <section class="row">
+          <div class="card mb-3 d-block">
+            <div class="row g-0 tarjeta_descripcion">
+              <div class="col-md-8 col-sm-12">
+                <div class="card-body text-center">
+                  <h3 class="card-title text-center">Lo mas Vendido</h3>
+                  <a href="./pages/productos.html" class="btn btn-primary"
+                    >Ver Mas</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <img
+                  src="./images/anteojos.jpg"
+                  class="img-fluid p-3 rounded"
+                  alt="Anteojos"
+                />
+              </div>
             </div>
-          </section>
-
-          <section class="tarjeta">
-            <div class="tarjeta__descripcion">
-              <h2 class="tarjeta__nombre">
-                <strong>Temporada Verano 2023</strong>
-              </h2>
-
-              <h3 class="tarjeta__boton">Ver mas</h3>
-            </div>
-            <div class="tarjeta__contenedor">
-              <img
-                src="./images/anteojos.jpg"
-                alt="Anteojos"
-                class="tarjeta__img"
-              />
-            </div>
-          </section>
-          <hr />
-          <section class="tarjeta">
-            <div class="tarjeta__descripcion">
-              <h2 class="tarjeta__nombre"><strong>Los mas vendidos</strong></h2>
-              <h3 class="tarjeta__boton">Ver mas</h3>
-            </div>
-            <div class="tarjeta__contenedor">
-              <img src="./images/ropa.jpg" alt="Ropa" class="tarjeta__img" />
-            </div>
-          </section>
-        </main>
+          </div>
+        </section>
       </div>
+      <div class="container-fluid px-3" data-aos="fade-left">
+        <section class="row">
+          <div class="card mb-3 d-block">
+            <div class="row g-0 tarjeta_descripcion">
+              <div class="col-md-8 col-sm-12 text-center">
+                <div class="card-body">
+                  <h3 class="card-title text-center">Temporada Verano 2022</h3>
+                </div>
+                <a href="./pages/productos.html" class="btn btn-primary"
+                  >Ver Mas</a
+                >
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <img
+                  src="./images/ropa.jpg"
+                  class="img-fluid p-3"
+                  alt="Anteojos"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
 
-      <!-- fin seccion novedades-->
-      <!-- Comienzo de footer  -->
-      <div class="row contenedor-footer">
-        <footer class="pie">
+    <!-- fin seccion novedades-->
+    <!-- Comienzo de footer  -->
+
+    <footer class="container-fluid pb-3">
+      <div class="row">
+        <div class="col-12 col-md-6">
           <h3 class="pie__copy">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
             rerum eos excepturi sint quasi omnis consequuntur eveniet adipisci,
             ullam accusantium fuga aut, cupiditate sed labore blanditiis.
             Inventore maiores a modi.
           </h3>
+        </div>
+        <div class="col-12 col-md-6 ms-auto">
           <ul class="pie__contacto">
-            <li>Contacto</li>
-            <li>Rede Sociales</li>
-            <li>Copyright</li>
+            <li>Contacto:</li>
+            <li>Rede Sociales:</li>
+            <li>Copyright:</li>
           </ul>
-        </footer>
+        </div>
       </div>
-    </div>
+    </footer>
+
     <!-- fin footer-->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

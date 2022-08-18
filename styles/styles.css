@@ -11,7 +11,10 @@ a {
   box-shadow: none;
 }
 body {
-  height: 100%;
+  height: 100vh;
+}
+h4 {
+  font-size: small;
 }
 .encabezado__lista :hover {
   background-color: #5b78a7;
@@ -51,9 +54,9 @@ textarea {
   display: none;
 }
 .encabezado__logo {
-  max-width: 20%;
+  max-width: 5rem;
   max-height: auto;
-  padding: 5%;
+
   z-index: 99;
 }
 /* .encabezado__lista {
@@ -65,24 +68,23 @@ textarea {
   display: none;
 }
 /* HERO */
-.hero {
+/* .hero {
   height: 92vh;
   background: url(../images/hero.jpg) center / cover no-repeat fixed;
   /* display: flex; */
 
-  justify-content: center;
+/* justify-content: center;
   align-items: center;
 
   overflow: hidden;
-}
+} */
 .hero__text {
   text-align: center;
-  background-color: rgba(224, 241, 64, 0.747);
-  color: white;
-  border-radius: 15%;
+  z-index: 99;
+  color: rgb(0, 0, 0);
+  display: flex;
 
-  padding: 15px;
-
+  position: absolute;
   transition: all;
   transition-duration: 2s;
   transition-timing-function: ease-out;
@@ -106,15 +108,19 @@ textarea {
   padding: 1rem;
 }
 .tarjeta_descripcion {
-  display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 .tarjeta__img {
   margin-top: 0.5rem;
-  height: auto;
+  height: 40rem;
   width: 100%;
-
-  border-radius: 15px 0 15px 0;
+  object-fit: cover;
+}
+.tarjeta_imagen {
+  height: 12rem;
+  width: auto;
+  object-fit: cover;
+  align-self: center;
 }
 .tarjeta__nombre {
   margin-bottom: 10px;
@@ -161,7 +167,7 @@ h2 {
 
 .pie__contacto {
   margin: 5px;
-  text-align: justify;
+  text-align: left;
 }
 .pie__copy {
   font-size: small;
@@ -185,141 +191,4 @@ h2 {
 }
 .contenedor-form {
   width: 2fr;
-}
-
-/* BREAKPOINTS */
-@media (max-width: 480px) {
-  .icono__seguidor {
-    left: 85%;
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
-  h3 {
-    font-size: small;
-  }
-  .contenedor-principal {
-    margin: 5px;
-  }
-  .contenedor-header {
-    width: 100%;
-
-    overflow: hidden;
-  }
-  .encabezado__nav {
-    width: 100%;
-    display: none;
-  }
-  .menu {
-    font-size: 3rem;
-    display: block;
-  }
-  .contenedor-main {
-    width: 100%;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hero {
-    height: 75vh;
-    background: url(../images/hero.jpg) center / cover no-repeat fixed;
-  }
-
-  .hero__text:hover {
-    color: #000;
-    background-color: rgb(255, 255, 255);
-    transform: scale(1.5, 1.5);
-    opacity: 60%;
-    border-radius: 15% 0 15% 0;
-  }
-  .tarjeta {
-    flex-direction: column;
-  }
-  .tarjeta__contenedor {
-    display: block;
-  }
-  .tarjeta__descripcion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: small;
-  }
-  .tarjeta__boton {
-    border: 1px solid rgba(0, 0, 0, 0.247);
-    border-radius: 5px;
-  }
-
-  .secundaria {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  /* SECCION CONTACTO */
-  .formulario {
-    flex-direction: column;
-  }
-
-  .contenedor-formulario {
-    width: 100px;
-  }
-}
-@media (min-width: 481px) {
-  .contenedor-principal {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .tarjeta {
-    flex-direction: row;
-  }
-  /* .tarjeta__descripcion {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 400px;
-  } */
-  .tarjeta__descripcion {
-    align-self: center;
-    border-radius: 15%;
-  }
-  .tarjeta__boton {
-    transition-duration: 1s;
-    border-radius: 15%;
-    cursor: pointer;
-    transition-timing-function: ease-in;
-
-    font-size: 1rem;
-  }
-  .tarjeta__boton:hover {
-    background-color: #5b78a76c;
-    border-style: dashed;
-    border-radius: 15%;
-
-    border: 1px solid rgba(0, 0, 0, 0.082);
-
-    transform: scale(1.5, 1.5) translateY(1rem);
-  }
-
-  .tarjeta {
-    justify-content: space-around;
-  }
-  .tarjeta__contenedor {
-    max-width: 50%;
-  }
-  .descrip-two {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  .maps {
-    height: 200%;
-  }
-  .formulario {
-    overflow: hidden;
-  }
-  .contenedor-formulario {
-    display: block;
-  }
-  fieldset {
-    width: 100%;
-  }
 }
