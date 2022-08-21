@@ -1,0 +1,19 @@
+.hero {
+  &__text {
+    z-index: 99;
+    position: absolute;
+    align-self: center;
+    width: 100%;
+  }
+}
+.bg-primario {
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+
+  background-color: rgba(255, 235, 205, 0.178);
+}
+.bg-primario:hover {
+  background-color: rgba(0, 0, 0, 0.226);
+  color: white;
+  cursor: default;
+}
