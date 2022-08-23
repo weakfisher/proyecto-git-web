@@ -4,9 +4,27 @@
   }
 }
 .nav-link:hover {
-  color: antiquewhite;
+  color: black;
 }
 
 .img-g {
   height: 75%;
+}
+.icono__seguidor {
+  width: 2rem;
+  height: 2rem;
+  z-index: 4;
+  position: fixed;
+
+  left: 95vw;
+  top: 93%;
+
+  cursor: pointer;
+}
+
+.bg-segundo {
+  background-color: #5b78a7;
+}
+.navbar-nav:hover {
+  color: white;
 }

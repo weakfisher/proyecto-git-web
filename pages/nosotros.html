@@ -17,104 +17,126 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
   "
-  />
+    />
     <link rel="stylesheet" href="../styles/styles.css" />
 
     <title>Nostoros</title>
   </head>
-  <div class="contenedor-principal">
+
   <body>
     <!--  fila logo y nav -->
-    <div class="contenedor-header">
-    <header class="encabezado">
-      <a href="../index.html"
-        ><img
-          src="../images/termo.png"
-          class="encabezado__logo"
-          alt="Imagen de un termo"
-      /></a>
-      <div class="menu"><i class="bi bi-list"></i></div>
-      <nav class="encabezado__nav">
-        <ul class="encabezado__lista">
-          <li class="encabezado__item">
-            <a href="./productos.html">Productos</a>
-          </li>
-          <li class="encabezado__item">
-            <a href="./nosotros.html"> Nosotros</a>
-          </li>
-          <li class="encabezado__item">
-            <a href="./contacto.html"> Contacto</a>
-          </li>
-          <li class="encabezado__item">
-            <a href="./guia.html">Guia</a>
-          </li>
-        </ul>
-      </nav>
+
+    <header class="navbar navbar-expand-lg bg-segundo border-bottom sticky-top">
+      <div class="container">
+        <a href="../index.html"
+          ><img
+            class="navbar-brand px-3 encabezado__logo"
+            src="../images/termo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./pages/guia.html"
+                >Guia</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- cierre fila logo y nav-->
-  </div>
-  <div class="contenedor-main">
-  <main>
-      <section class="tarjeta">
-        <h2 class="tarjeta_descripcion descrip-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deserunt corporis iure voluptates atque facere deleniti quis odio modi et?</h2>
 
-        <div class="contenedor-tarjeta">
-          <img src="../images/close.jpg" alt="Trabajo en equipo" class="tarjeta__img">
+    <main class="container">
+      <div class="row my-3 border">
+        <div class="col-12 col-md-6 text-center align-self">
+          <h3>Lorem, ipsum dolor.</h3>
         </div>
-
-      </section>
-      <section class="tarjeta secundaria">
-        <div class="contenedor-tarjeta">
-          <img src="../images/city.jpg" alt="donde nacimos" class="tarjeta__img">
+        <div class="col-12 col-md-6">
+          <img class="w-100" src="../images/equipo.jpg" alt="" />
         </div>
-        <h2 class="tarjeta_descripcion descrip-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deserunt corporis iure voluptates atque facere deleniti quis odio modi et?</h2>
-
-      </section>
-      <section class="tarjeta">
-        <h2 class="tarjeta_descripcion descrip-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deserunt corporis iure voluptates atque facere deleniti quis odio modi et?</h2>
-
-        <div class="contenedor-tarjeta">
-          <img src="../images/equipo.jpg" alt="Trabajo en equipo" class="tarjeta__img">
+      </div>
+      <div class="row my-3 border">
+        <div class="col-12 col-md-6 text-center align-self">
+          <h3>Lorem, ipsum dolor.</h3>
         </div>
-
-      </section>
-      <section class="tarjeta secundaria">
-        <div class="contenedor-tarjeta">
-          <img src="../images/teamwork.jpg" alt="Trabajo en equipo" class="tarjeta__img">
+        <div class="col-12 col-md-6">
+          <img class="w-100" src="../images/equipo.jpg" alt="" />
         </div>
-        <h2 class="tarjeta_descripcion descrip-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse deserunt corporis iure voluptates atque facere deleniti quis odio modi et?</h2>
-
-      </section>
+      </div>
+      <div class="row my-3 border">
+        <div class="col-12 col-md-6 text-center align-self">
+          <h3>Lorem, ipsum dolor.</h3>
+        </div>
+        <div class="col-12 col-md-6">
+          <img class="w-100" src="../images/equipo.jpg" alt="" />
+        </div>
+      </div>
     </main>
-  </div>  
+
     <!--comienzo footer   -->
-    <div class="contenedor-footer">
-    <footer class="pie">
-      <div class="pie__copy">
-        <h3>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          rerum eos excepturi sint quasi omnis consequuntur eveniet adipisci,
-          ullam accusantium fuga aut, cupiditate sed labore blanditiis.
-          Inventore maiores a modi.
-        </h3>
-        <ul class="pie__contacto">
-          <li>Contacto</li>
-          <li>Rede Sociales</li>
-          <li>Copyright</li>
-        </ul>
+    <footer class="container-fluid pt-2">
+      <div class="row pie">
+        <div class="col-12 col-md-6">
+          <h3 class="pie__copy">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            rerum eos excepturi sint quasi omnis consequuntur eveniet adipisci,
+            ullam accusantium fuga aut, cupiditate sed labore blanditiis.
+            Inventore maiores a modi.
+          </h3>
+        </div>
+        <div class="col-12 col-md-6 ms-auto">
+          <ul class="pie__contacto">
+            <div class="d-flex flex-direction-row">
+              <li>Rede Sociales:</li>
+              <i class="bi bi-instagram ms-2 font-size-2"></i>
+              <i class="bi bi-facebook ms-2"></i>
+              <i class="bi bi-twitter ms-2"></i>
+            </div>
+            <div class="d-flex">
+              <li>Contacto:+54 341 xxx xxx</li>
+              <i class="bi bi-whatsapp ms-2"></i>
+            </div>
+            <li>Copyright:</li>
+          </ul>
+        </div>
       </div>
     </footer>
-    <!-- Fin de footer-->
-  </div>
-</div>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
