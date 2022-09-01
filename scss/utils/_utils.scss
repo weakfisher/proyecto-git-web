@@ -1,0 +1,23 @@
+// Mixin
+@mixin flex-center($primer) {
+  display: flex;
+  justify-content: center;
+  align-items: $primer;
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1268px) {
+    @content;
+  }
+}
+
+%tarjeta {
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}

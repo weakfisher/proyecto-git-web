@@ -1,8 +1,9 @@
 .hero {
+  align-items: center;
   &__text {
     z-index: 99;
     position: absolute;
-    align-self: center;
+
     width: 100%;
   }
 }

@@ -21,10 +21,11 @@
 
   cursor: pointer;
 }
+$color-primario: #ffb4b4;
 
 .bg-segundo {
-  background-color: #5b78a7;
+  background-color: $color-primario;
 }
-.navbar-nav:hover {
+.navbar-item:hover {
   color: white;
 }

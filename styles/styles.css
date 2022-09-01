@@ -21,17 +21,19 @@
 }
 
 .bg-segundo {
-  background-color: #5b78a7;
+  background-color: #ffb4b4;
 }
 
-.navbar-nav:hover {
+.navbar-item:hover {
   color: white;
 }
 
+.hero {
+  align-items: center;
+}
 .hero__text {
   z-index: 99;
   position: absolute;
-  align-self: center;
   width: 100%;
 }
 
@@ -85,9 +87,9 @@ html {
   display: flex;
 }
 
-.card {
+.card, .card__img img {
   margin: 1em;
-  width: 33.3333333333%;
+  object-fit: cover;
 }
 .card__img {
   height: 22vw;
@@ -101,6 +103,27 @@ html {
   max-height: 100%;
 }
 
+.boton {
+  background-color: #703d57;
+}
+
+.card__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono__seguidor {
+  width: 2rem;
+  height: 2rem;
+  z-index: 4;
+  position: fixed;
+  left: 95vw;
+  top: 93%;
+  background-color: beige;
+  color: aqua;
+}
+
 .pie__copy {
   font-size: small;
 }
@@ -109,19 +132,41 @@ html {
 }
 
 footer {
-  background-color: beige;
+  background-color: rgba(254, 216, 102, 0.6901960784);
   padding-top: 1rem;
 }
 
-.icono__seguidor {
-  width: 2rem;
-  height: 2rem;
-  z-index: 4;
-  position: fixed;
-  left: 95vw;
-  top: 93%;
-  background-color: beige;
-  color: aqua;
+.hero {
+  align-items: center;
+}
+.hero__text {
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+}
+
+.bg-primario {
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  background-color: rgba(255, 235, 205, 0.178);
+}
+
+.bg-primario:hover {
+  background-color: rgba(0, 0, 0, 0.226);
+  color: white;
+  cursor: default;
+}
+
+.encabezado__logo {
+  height: 4rem;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.img-g {
+  height: 75%;
 }
 
 .icono__seguidor {
@@ -131,8 +176,15 @@ footer {
   position: fixed;
   left: 95vw;
   top: 93%;
-  background-color: beige;
-  color: aqua;
+  cursor: pointer;
+}
+
+.bg-segundo {
+  background-color: #ffb4b4;
+}
+
+.navbar-item:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

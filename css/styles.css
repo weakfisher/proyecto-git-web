@@ -1,101 +1,18 @@
-.encabezado__logo {
-  height: 4rem;
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 5 |     @include flex-center();
+ *   |     ^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\components\hero.scss 5:5  @import
+ *   scss\main.scss 2:9             root stylesheet */
 
-.nav-link:hover {
-  color: black;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 5 \2502      @include flex-center();\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\components\\hero.scss 5:5  @import\a   scss\\main.scss 2:9             root stylesheet";
 }
-
-.img-g {
-  height: 75%;
-}
-
-.icono__seguidor {
-  width: 2rem;
-  height: 2rem;
-  z-index: 4;
-  position: fixed;
-  left: 95vw;
-  top: 93%;
-  cursor: pointer;
-}
-
-.hero__text {
-  z-index: 99;
-  position: absolute;
-  align-self: center;
-  width: 100%;
-}
-
-.bg-primario {
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
-  background-color: rgba(255, 235, 205, 0.178);
-}
-
-.bg-primario:hover {
-  background-color: rgba(0, 0, 0, 0.226);
-  color: white;
-  cursor: default;
-}
-
-h2 {
-  background-color: black;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-  box-shadow: none;
-}
-
-.pie__copy {
-  font-size: small;
-}
-.pie__contacto {
-  font-size: medium;
-}
-
-footer {
-  background-color: beige;
-}
-
-.icono__seguidor {
-  width: 2rem;
-  height: 2rem;
-  z-index: 4;
-  position: fixed;
-  left: 95vw;
-  top: 93%;
-  background-color: beige;
-  color: aqua;
-}
-
-.bg-primarios {
-  background-color: aqua;
-}
-
-.icono__seguidor {
-  width: 2rem;
-  height: 2rem;
-  z-index: 4;
-  position: fixed;
-  left: 95vw;
-  top: 93%;
-  background-color: beige;
-  color: aqua;
-}
-
-.bg-primarios {
-  background-color: aqua;
-}
-
-/*# sourceMappingURL=styles.css.map */

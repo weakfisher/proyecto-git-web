@@ -6,7 +6,8 @@
     font-size: medium;
   }
 }
+$color-secundario: #fed866b0;
 footer {
-  background-color: beige;
+  background-color: $color-secundario;
   padding-top: 1rem;
 }

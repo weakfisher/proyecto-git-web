@@ -1,0 +1,8 @@
+$redes: (
+  instagram: red,
+  facebook: blue,
+  whastapp: green,
+);
+.btn--instagram {
+  color: map-get($redes, "instagram");
+}
