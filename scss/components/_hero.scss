@@ -3,7 +3,7 @@
   &__text {
     z-index: 99;
     position: absolute;
-
+    pointer-events: none;
     width: 100%;
   }
 }
@@ -16,5 +16,4 @@
 .bg-primario:hover {
   background-color: rgba(0, 0, 0, 0.226);
   color: white;
-  cursor: default;
 }

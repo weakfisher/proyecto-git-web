@@ -6,6 +6,9 @@
 
   left: 95vw;
   top: 93%;
-  background-color: beige;
-  color: aqua;
+
+  display: none;
+  @include tablet {
+    display: block;
+  }
 }

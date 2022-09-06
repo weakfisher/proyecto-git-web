@@ -24,8 +24,38 @@
   background-color: #ffb4b4;
 }
 
-.navbar-item:hover {
+.navegacion__item:hover {
   color: white;
+  transition-duration: 1s;
+  box-shadow: 10px 14px 11px 4px rgba(0, 0, 0, 0.77);
+}
+
+.navegacion {
+  transition-duration: 1s;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 0px -3px rgba(0, 0, 0, 0.75);
+  }
+}
+@media (min-width: 1268px) {
+  .navegacion {
+    flex-direction: row;
+    box-shadow: none;
+  }
+}
+
+.navegacion__item {
+  transition-duration: 1s;
+}
+
+@media (min-width: 1268px) {
+  .nav-link {
+    transition-duration: 1s;
+    color: rgba(255, 255, 255, 0.719);
+  }
 }
 
 .hero {
@@ -34,6 +64,7 @@
 .hero__text {
   z-index: 99;
   position: absolute;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -46,7 +77,6 @@
 .bg-primario:hover {
   background-color: rgba(0, 0, 0, 0.226);
   color: white;
-  cursor: default;
 }
 
 * {
@@ -97,14 +127,45 @@ html {
   align-items: center;
   justify-content: center;
 }
+.card__img2 {
+  display: inline;
+  max-height: 15vh;
+}
+.card__nosotros-img {
+  margin: 0;
+  padding: 1em;
+  border-radius: 25%;
+}
+.card__nosotros-text {
+  padding-top: 1em;
+  font-size: medium;
+}
+@media (min-width: 768px) {
+  .card__nosotros-text {
+    font-size: medium;
+    align-self: center;
+    line-height: 150%;
+    text-align: left;
+  }
+}
+@media (min-width: 1268px) {
+  .card__nosotros-text {
+    font-size: x-large;
+    align-self: center;
+    line-height: 170%;
+    text-align: left;
+  }
+}
 
 .card__img img {
   max-width: 100%;
   max-height: 100%;
+  object-fit: contain;
 }
 
 .boton {
   background-color: #703d57;
+  color: white;
 }
 
 .card__text {
@@ -120,10 +181,17 @@ html {
   position: fixed;
   left: 95vw;
   top: 93%;
-  background-color: beige;
-  color: aqua;
+  display: none;
+}
+@media (min-width: 768px) {
+  .icono__seguidor {
+    display: block;
+  }
 }
 
+.pie {
+  align-items: center;
+}
 .pie__copy {
   font-size: small;
 }
@@ -142,6 +210,7 @@ footer {
 .hero__text {
   z-index: 99;
   position: absolute;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -154,7 +223,6 @@ footer {
 .bg-primario:hover {
   background-color: rgba(0, 0, 0, 0.226);
   color: white;
-  cursor: default;
 }
 
 .encabezado__logo {
@@ -183,8 +251,46 @@ footer {
   background-color: #ffb4b4;
 }
 
-.navbar-item:hover {
+.navegacion__item:hover {
   color: white;
+  transition-duration: 1s;
+  box-shadow: 10px 14px 11px 4px rgba(0, 0, 0, 0.77);
+}
+
+.navegacion {
+  transition-duration: 1s;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 0px -3px rgba(0, 0, 0, 0.75);
+  }
+}
+@media (min-width: 1268px) {
+  .navegacion {
+    flex-direction: row;
+    box-shadow: none;
+  }
+}
+
+.navegacion__item {
+  transition-duration: 1s;
+}
+
+@media (min-width: 1268px) {
+  .nav-link {
+    transition-duration: 1s;
+    color: rgba(255, 255, 255, 0.719);
+  }
+}
+
+.btn--instagram {
+  color: red;
+}
+
+.maps {
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=styles.css.map */

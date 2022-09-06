@@ -1,18 +1,304 @@
-/* Error: Undefined mixin.
- *   ,
- * 5 |     @include flex-center();
- *   |     ^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\components\hero.scss 5:5  @import
- *   scss\main.scss 2:9             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 5 \2502      @include flex-center();\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\components\\hero.scss 5:5  @import\a   scss\\main.scss 2:9             root stylesheet";
+.encabezado__logo {
+  height: 4rem;
 }
+
+.nav-link:hover {
+  color: black;
+}
+
+.img-g {
+  height: 75%;
+}
+
+.icono__seguidor {
+  width: 2rem;
+  height: 2rem;
+  z-index: 4;
+  position: fixed;
+  left: 95vw;
+  top: 93%;
+  cursor: pointer;
+}
+
+.bg-segundo {
+  background-color: #ffb4b4;
+}
+
+.navegacion__item:hover {
+  color: white;
+  transition-duration: 1s;
+  box-shadow: 10px 14px 11px 4px rgba(0, 0, 0, 0.77);
+}
+
+.navegacion {
+  transition-duration: 1s;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 0px -3px rgba(0, 0, 0, 0.75);
+  }
+}
+@media (min-width: 1268px) {
+  .navegacion {
+    flex-direction: row;
+    box-shadow: none;
+  }
+}
+
+.navegacion__item {
+  transition-duration: 1s;
+}
+
+@media (min-width: 1268px) {
+  .nav-link {
+    transition-duration: 1s;
+    color: rgba(255, 255, 255, 0.719);
+  }
+}
+
+.navegacion__nav {
+  justify-content: space-around;
+}
+
+.hero {
+  align-items: center;
+}
+.hero__text {
+  z-index: 99;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+}
+
+.bg-primario {
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  background-color: rgba(255, 235, 205, 0.178);
+}
+
+.bg-primario:hover {
+  background-color: rgba(0, 0, 0, 0.226);
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  box-shadow: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+footer {
+  margin-top: auto;
+}
+
+html {
+  height: 100%;
+}
+
+.img {
+  width: 75vh;
+  height: auto;
+  align-self: center;
+}
+
+.cards__contenedor {
+  display: flex;
+}
+
+.card, .card__img img {
+  margin: 1em;
+  object-fit: cover;
+}
+.card__img {
+  height: 22vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__img2 {
+  display: inline;
+  max-height: 15vh;
+}
+.card__nosotros-img {
+  margin: 0;
+  padding: 1em;
+  border-radius: 25%;
+}
+.card__nosotros-text {
+  padding-top: 1em;
+  font-size: medium;
+}
+@media (min-width: 768px) {
+  .card__nosotros-text {
+    font-size: medium;
+    align-self: center;
+    line-height: 150%;
+    text-align: left;
+  }
+}
+@media (min-width: 1268px) {
+  .card__nosotros-text {
+    font-size: x-large;
+    align-self: center;
+    line-height: 170%;
+    text-align: left;
+  }
+}
+
+.card__img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.boton {
+  background-color: #703d57;
+  color: white;
+}
+
+.card__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono__seguidor {
+  width: 2rem;
+  height: 2rem;
+  z-index: 4;
+  position: fixed;
+  left: 95vw;
+  top: 93%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .icono__seguidor {
+    display: block;
+  }
+}
+
+.pie {
+  align-items: center;
+}
+.pie__copy {
+  font-size: small;
+}
+.pie__contacto {
+  font-size: medium;
+}
+
+footer {
+  background-color: rgba(254, 216, 102, 0.6901960784);
+  padding-top: 1rem;
+}
+
+.hero {
+  align-items: center;
+}
+.hero__text {
+  z-index: 99;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+}
+
+.bg-primario {
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  background-color: rgba(255, 235, 205, 0.178);
+}
+
+.bg-primario:hover {
+  background-color: rgba(0, 0, 0, 0.226);
+  color: white;
+}
+
+.encabezado__logo {
+  height: 4rem;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.img-g {
+  height: 75%;
+}
+
+.icono__seguidor {
+  width: 2rem;
+  height: 2rem;
+  z-index: 4;
+  position: fixed;
+  left: 95vw;
+  top: 93%;
+  cursor: pointer;
+}
+
+.bg-segundo {
+  background-color: #ffb4b4;
+}
+
+.navegacion__item:hover {
+  color: white;
+  transition-duration: 1s;
+  box-shadow: 10px 14px 11px 4px rgba(0, 0, 0, 0.77);
+}
+
+.navegacion {
+  transition-duration: 1s;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 0px -3px rgba(0, 0, 0, 0.75);
+  }
+}
+@media (min-width: 1268px) {
+  .navegacion {
+    flex-direction: row;
+    box-shadow: none;
+  }
+}
+
+.navegacion__item {
+  transition-duration: 1s;
+}
+
+@media (min-width: 1268px) {
+  .nav-link {
+    transition-duration: 1s;
+    color: rgba(255, 255, 255, 0.719);
+  }
+}
+
+.navegacion__nav {
+  justify-content: space-around;
+}
+
+.btn--instagram {
+  color: red;
+}
+
+.maps {
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -55,19 +55,19 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul class="navbar-nav pe-3">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./pages/guia.html"
+          <ul class="navbar-nav pe-3 navegacion">
+            <li class="nav-item navegacion__item">
+              <a class="nav-link" aria-current="page" href="./guia.html"
                 >Guia</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item navegacion__item">
               <a class="nav-link" href="./productos.html">Productos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item navegacion__item">
               <a class="nav-link" href="./nosotros.html">Nosotros</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item navegacion__item">
               <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
           </ul>
@@ -75,30 +75,63 @@
       </div>
     </header>
     <!-- cierre fila logo y nav-->
-
+    <div>
+      <img
+        src="../images/733641.png"
+        class="icono__seguidor bg-primarios"
+        alt=""
+      />
+    </div>
     <main class="container">
-      <div class="row my-3 border">
-        <div class="col-12 col-md-6 text-center align-self card__text">
-          <h3 class="card__text">Lorem, ipsum dolor.</h3>
+      <h1 class="text-center p-2">Acerca de Nosotros</h1>
+      <div class="row my-3 border" data-aos="fade-left">
+        <div
+          data-aos="fade-down-right"
+          class="col-12 col-md-6 text-center order-lg-last order-md-last align-self card__text"
+        >
+          <h2 class="card__nosotros-text">
+            Nuestro Ideal? Nuestro equipo se basa en el trabajo en equipo para
+            desarrollar nuevos productos que satisfagan las necesidas de
+            nuestros clientes.
+          </h2>
         </div>
-        <div class="col-12 col-md-6">
-          <img class="w-100" src="../images/equipo.jpg" alt="" />
+        <div class="col-12 col-md-6 card__nosotros-img" data-aos="fade-left">
+          <img
+            class="w-100 rounded-2"
+            src="../images/equipo.jpg"
+            alt="Nuestro equipo"
+          />
         </div>
       </div>
-      <div class="row my-3 border">
+      <div class="row my-3 border" data-aos="fade-right">
         <div class="col-12 col-md-6 text-center align-self card__text">
-          <h3>Lorem, ipsum dolor.</h3>
+          <h2 class="card__nosotros-text">
+            Quienes somos? Somos un grupo de amigos que se junto para acercarte
+            los productos que necesitas para tus salidas a la plaza .
+          </h2>
         </div>
-        <div class="col-12 col-md-6">
-          <img class="w-100" src="../images/equipo.jpg" alt="" />
+        <div class="col-12 col-md-6 card__nosotros-img">
+          <img
+            class="w-100 rounded-2"
+            src="../images/empleado-trabajando.jpg"
+            alt="Uno de los empleados con un mate"
+          />
         </div>
       </div>
-      <div class="row my-3 border">
-        <div class="col-12 col-md-6 text-center align-self card__text">
-          <h3>Lorem, ipsum dolor.</h3>
+      <div class="row my-3 border" data-aos="fade-left">
+        <div
+          class="col-12 col-md-6 order-lg-last order-md-last text-center align-self card__text"
+        >
+          <h2 class="card__nosotros-text">
+            Que ofrecemos? Los mejores mates, termos y bombillas.
+          </h2>
         </div>
-        <div class="col-12 col-md-6">
-          <img class="w-100" src="../images/equipo.jpg" alt="" />
+        <div class="col-12 col-md-6 card__nosotros-img">
+          <img
+            class="w-100 card__img rounded-2"
+            src="../images/mate.jpg"
+            alt="Mate de marfil"
+          />
         </div>
       </div>
     </main>
@@ -107,20 +140,20 @@
     <footer class="container-fluid pt-2">
       <div class="row pie">
         <div class="col-12 col-md-6">
-          <h3 class="pie__copy">
+          <h2 class="pie__copy">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
             rerum eos excepturi sint quasi omnis consequuntur eveniet adipisci,
             ullam accusantium fuga aut, cupiditate sed labore blanditiis.
             Inventore maiores a modi.
-          </h3>
+          </h2>
         </div>
         <div class="col-12 col-md-6 ms-auto">
           <ul class="pie__contacto">
             <div class="d-flex flex-direction-row">
               <li>Rede Sociales:</li>
-              <i class="bi bi-instagram ms-2 font-size-2"></i>
-              <i class="bi bi-facebook ms-2"></i>
-              <i class="bi bi-twitter ms-2"></i>
+              <a href="#"><i class="bi bi-instagram ms-2 font-size-2"></i></a>
+              <a href="#"><i class="bi bi-facebook ms-2"></i></a>
+              <a href="#"><i class="bi bi-twitter ms-2"></i></a>
             </div>
             <div class="d-flex">
               <li>Contacto:+54 341 xxx xxx</li>

@@ -15,17 +15,45 @@
     align-items: center;
     justify-content: center;
   }
+  &__img2 {
+    display: inline;
+    max-height: 15vh;
+  }
+  &__nosotros-img {
+    margin: 0;
+    padding: 1em;
+    border-radius: 25%;
+  }
+  &__nosotros-text {
+    padding-top: 1em;
+    font-size: medium;
+    @include tablet {
+      font-size: medium;
+      align-self: center;
+      line-height: 150%;
+      text-align: left;
+    }
+    @include desktop {
+      font-size: x-large;
+      align-self: center;
+      line-height: 170%;
+      text-align: left;
+    }
+  }
 }
 .card__img img {
   max-width: 100%;
   max-height: 100%;
+  object-fit: cover;
   @extend .card;
 }
 .boton {
   background-color: #703d57;
+  color: white;
 }
 .card__text {
   display: flex;
   justify-content: center;
+
   align-items: center;
 }

@@ -31,11 +31,8 @@
   <body>
     <!--  fila logo y nav -->
 
-    <header
-      class="navbar navbar-expand-lg bg-segundo border-bottom sticky-top"
-      data-aos="zoom-out-left"
-    >
-      <div class="container">
+    <header class="navbar navbar-expand-lg bg-segundo border-bottom sticky-top">
+      <div class="container navegacion__nav">
         <a href="./index.html"
           ><img
             class="navbar-brand px-3 encabezado__logo"
@@ -56,25 +53,32 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul class="navbar-nav pe-3">
-            <li class="nav-item">
+          <ul class="navbar-nav pe-3 navegacion">
+            <li class="nav-item navegacion__item">
               <a class="nav-link" aria-current="page" href="./pages/guia.html"
                 >Guia</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item navegacion__item">
               <a class="nav-link" href="./pages/productos.html">Productos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item navegacion__item">
               <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item navegacion__item">
               <a class="nav-link" href="./pages/contacto.html">Contacto</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+    <div>
+      <img
+        src="../images/733641.png"
+        class="icono__seguidor bg-primarios"
+        alt=""
+      />
+    </div>
     <section class="container-fluid hero">
       <div class="row justify-content-center hero">
         <img
@@ -88,7 +92,7 @@
       </div>
     </section>
     <main class="container my-5">
-      <section class="container my-5 border-bottom">
+      <section class="container my-5 border-bottom" data-aos="zoom-out-left">
         <div class="row">
           <div class="col-12 col-lg-6">
             <img
@@ -103,14 +107,23 @@
             <h2>Lo mas vendido de esta Temporada 20220.</h2>
             <p>Ingresa para ver lo mas llevado para juntadas con amigos.</p>
             <div class="py-2">
-              <button class="btn btn-outline-dark flex-start boton">
+              <button
+                class="btn btn-outline-dark flex-start boton"
+                data-aos="flip-up"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+              >
                 Ver Mas
               </button>
             </div>
           </div>
         </div>
       </section>
-      <section class="container my-5 border-bottom hero">
+      <section
+        class="container my-5 border-bottom hero"
+        data-aos="zoom-out-left"
+      >
         <div class="row">
           <div class="col-12 col-lg-6">
             <img src="./images/hero.jpg" alt="" class="w-100 rounded" />
@@ -123,25 +136,29 @@
               Ingresa para ver los productos que tenemos de oferta para vos.
             </p>
             <div class="py-2">
-              <button class="btn btn-outline-dark flex-start boton">
+              <button
+                class="btn btn-outline-dark flex-start boton"
+                class="btn btn-outline-dark flex-start boton"
+                data-aos="flip-up"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+              >
                 Ver Mas
               </button>
             </div>
           </div>
         </div>
       </section>
-      <section class="row my-5">
+      <section class="row my-5 justify-content-md-center">
         <div class="col-12 col-lg-6 shadow">
-          <h3 class="font-display-bold text-center text-lg-start">
-            Lorem ipsum dolor sit amet.
+          <h3 class="font-display-bold text-center text-lg-start p-2">
+            Gracias a quien nacio esta idea?
           </h3>
-          <p class="text-center text-lg-start p-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis
-            sequi incidunt.
-          </p>
+          <p class="text-center text-lg-start p-2">Gracias a ...</p>
         </div>
         <div class="d-none d-lg-block col-4">
-          <img src="./images/city.jpg" alt="" class="img-fluid w-100" />
+          <img src="./images/ceo.png" alt="" class="img-fluid w-100" />
         </div>
       </section>
     </main>
@@ -151,24 +168,19 @@
     <footer class="container-fluid pt-2">
       <div class="row pie">
         <div class="col-12 col-md-6">
-          <h3 class="pie__copy">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-            rerum eos excepturi sint quasi omnis consequuntur eveniet adipisci,
-            ullam accusantium fuga aut, cupiditate sed labore blanditiis.
-            Inventore maiores a modi.
-          </h3>
+          <h3 class="pie__copy">© Copyright 2022 Milton</h3>
         </div>
         <div class="col-12 col-md-6 ms-auto">
           <ul class="pie__contacto">
             <div class="d-flex flex-direction-row">
               <li>Rede Sociales:</li>
-              <i class="bi bi-instagram ms-2 font-size-2"></i>
-              <i class="bi bi-facebook ms-2"></i>
-              <i class="bi bi-twitter ms-2"></i>
+              <a href="#"><i class="bi bi-instagram ms-2 font-size-2"></i></a>
+              <a href="#"><i class="bi bi-facebook ms-2"></i></a>
+              <a href="#"><i class="bi bi-twitter ms-2"></i></a>
             </div>
             <div class="d-flex">
               <li>Contacto:+54 341 xxx xxx</li>
-              <i class="bi bi-whatsapp ms-2"></i>
+              <a href="#"><i class="bi bi-whatsapp ms-2"></i></a>
             </div>
             <li>Copyright:</li>
           </ul>

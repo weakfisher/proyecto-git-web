@@ -26,7 +26,7 @@
 
     <title>Tienda Mates | Contacto</title>
   </head>
-  <body>
+  <body class="contacto">
     <header class="navbar navbar-expand-lg bg-segundo  border-bottom sticky-top">
       <div class="container">
         <a href="../index.html"
@@ -49,43 +49,74 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul class="navbar-nav pe-3">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./pages/guia.html"
+          <ul class="navbar-nav pe-3 navegacion">
+            <li class="nav-item navegacion__item">
+              <a class="nav-link" aria-current="page" href="./guia.html"
                 >Guia</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item navegacion__item">
               <a class="nav-link" href="./productos.html">Productos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item navegacion__item">
               <a class="nav-link" href="./nosotros.html">Nosotros</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item navegacion__item">
               <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <div class="container">
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+    <div>
+      <img
+        src="../images/733641.png"
+        class="icono__seguidor bg-primarios"
+        alt=""
+      />
+    </div>
+    <main >
+      <h1 class="text-center">Como contactarnos</h1>
+      <div class="container ">
+        <form class="p-4 m-2 border forms rounded-2 bg-white">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre y Apellido</label>
+            <input type="text" class="form-control" id="name">
+            <div id="name" class="form-text">Como figura en el DNI</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" >
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu informacion personal con nadie.</div>
+          </div>
+          <div class="mb-3">
+            <label for="numero" class="form-label" >Numero de Telefono</label>
+            <input type="number"class="form-control" id="numero">
+
+           </div>
+          <div class="mb-3">
+            <label for="postal" class="form-label" >Direccion</label>
+            <input type="text" class="form-control" id="postal">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="confirmacion" checked>
+            <label class="form-check-label" for="confirmacion">Quiero las ultimas novedades a mi mail</label>
+          </div>
+          <button type="submit" class="btn btn-primary boton ">Enviar</button>
+        </form>
+      </div>
+      <section class="container"  >
+      <div class="row bg-white  mb-3 rounded-3 p-1" >
+        <div class="col-12  mb-3 col-md-6 text-center align-self-center " >
+       <h2 >Donde encontrarnos?</h2>
+       <p>En Av.Siempre Viva  1234      
+       </p>
+      </div>
+       <div class="col-12 col-md-6 mb-3 maps">
+       <iframe class="col-12 col-md-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202033.68616965614!2d-92.28556524820763!3d37.70145124811002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87dae86ada8ced0b%3A0x528b3550021a8ee7!2sFort%20Leonard%20Wood%2C%20Misuri%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1662495616013!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div> 
+    </div>
+    </section>
     </main>
     <footer class="container-fluid pt-2">
       <div class="row pie">
@@ -101,13 +132,13 @@
           <ul class="pie__contacto">
             <div class="d-flex flex-direction-row">
               <li>Rede Sociales:</li>
-              <i class="bi bi-instagram ms-2 font-size-2"></i>
-              <i class="bi bi-facebook ms-2"></i>
-              <i class="bi bi-twitter ms-2"></i>
+              <a href="#"><i class="bi bi-instagram ms-2 font-size-2"></i></a>
+              <a href="#"><i class="bi bi-facebook ms-2"></i></a>
+              <a href="#"><i class="bi bi-twitter ms-2"></i></a>
             </div>
             <div class="d-flex">
               <li>Contacto:+54 341 xxx xxx</li>
-              <i class="bi bi-whatsapp ms-2"></i>
+              <a href="#"><i class="bi bi-whatsapp ms-2"></i></a>
             </div>
             <li>Copyright:</li>
           </ul>
