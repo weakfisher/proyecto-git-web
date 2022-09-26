@@ -313,6 +313,7 @@ footer {
   height: 100%;
   border-radius: 10%;
   margin: 10%;
+  overflow: hidden;
 }
 .card2__img {
   height: 50%;
