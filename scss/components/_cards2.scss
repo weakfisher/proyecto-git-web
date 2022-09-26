@@ -26,6 +26,7 @@
     @include mobile {
       height: 35%;
       font-size: medium;
+      border-radius: 25%;
     }
   }
 }
@@ -36,4 +37,3 @@
     max-width: 100%;
   }
 }
-$primary: #000;
