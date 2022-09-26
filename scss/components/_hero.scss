@@ -11,9 +11,10 @@
   transition-duration: 1s;
   transition-timing-function: ease-out;
 
-  background-color: rgba(255, 235, 205, 0.178);
+  background-color: rgba(179, 112, 13, 0.753);
 }
 .bg-primario:hover {
   background-color: rgba(0, 0, 0, 0.226);
   color: white;
+  border-radius: 85% 85% 0 0;
 }

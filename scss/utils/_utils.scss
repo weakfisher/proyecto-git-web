@@ -16,6 +16,11 @@
     @content;
   }
 }
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
 
 %tarjeta {
   border-radius: 2px;

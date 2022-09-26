@@ -22,7 +22,7 @@
 
   cursor: pointer;
 }
-$color-primario: #ffb4b4;
+$color-primario: #935343;
 
 .bg-segundo {
   background-color: $color-primario;
@@ -34,6 +34,7 @@ $color-primario: #ffb4b4;
 }
 .navegacion {
   transition-duration: 1s;
+  align-items: center;
   @include tablet {
     flex-direction: row;
     justify-content: space-evenly;
